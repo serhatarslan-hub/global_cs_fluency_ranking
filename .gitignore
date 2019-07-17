@@ -1,0 +1,8 @@
+# Gunk
+.DS_Store
+*.pyc
+*~
+.vscode
+
+# Zip Folders
+*.zip
