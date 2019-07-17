@@ -6,3 +6,6 @@
 
 # Zip Folders
 *.zip
+
+# Drivers
+*chromedriver*

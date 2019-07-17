@@ -9,7 +9,7 @@ QUERY_MAP = {
 # Google Trends base URL
 # Example full URL
 # https://trends.google.com/trends/explore?q=%2Fm%2F0h1fn8h,%2Fm%2F05z1_
-BASE_URL = "https://trends.google.com/trends/explore?date=2018-01-01%202018-12-31&q="
+BASE_URL = "https://trends.google.com/trends/explore?hl=en-US&date=2018-01-01%202018-12-31&q="
 
 # this is the HTML class name of the download buttons
 CLASS_NAME = 'export'
