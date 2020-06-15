@@ -8,20 +8,24 @@ Serhat Arslan, Mo Tiwari, and Chris Piech, which appeared in Learning at Scale
 
 If you use code from this repository, please cite the following paper:
 
+```
 @inproceedings{arslan2020cslearning,
   title={Estimating Global Patterns in Learning Quality Using Global Search Trends},
-  author={Abid, Abubakar and Tiwari, Mo and Piech, Chris},
+  author={Arslan, Serhat and Tiwari, Mo and Piech, Chris},
   year={2020},
   publisher={Learning at Scale},
 }
+```
 
+# Requirements
 
+The code requires Python 3.6.3 or above. The required python packages can be
+installed via `pip install -r requirements.txt`.
 
-Following instructions from
+This project also requires chromedriver, specifically for Chrome v.75 on MacOS.
+Once installed, chromedriver must be added to your environment's `PATH` variable.
+
+For further instructions and troubleshooting, please see:
 https://saucelabs.com/resources/articles/getting-started-with-webdriver-in-python-on-osx
 
-Note that the chromedriver in this directory is
-specifically for:
-  - Chrome 75
-  - MacOS
-And I had to add it to my PATH variable
+# Explanation of Files
