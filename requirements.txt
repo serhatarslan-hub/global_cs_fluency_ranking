@@ -1,6 +1,6 @@
-selenium==3.141.0
 matplotlib==3.2.1
 numpy==1.16.2
+selenium==3.141.0
 opencage==1.2.1
 openpyxl==3.0.3
 scikit_learn==0.23.1
