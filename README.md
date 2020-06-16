@@ -19,7 +19,7 @@ If you use code from this repository, please cite the following paper:
 
 # Requirements
 
-The code requires Python 3.6.3 or above. The required python packages can be
+The code requires Python 3.7.4 or above. The required python packages can be
 installed via `pip install -r requirements.txt`.
 
 This project also requires chromedriver, specifically for Chrome v.75 on MacOS.
