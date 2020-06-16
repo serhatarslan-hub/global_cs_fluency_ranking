@@ -3,6 +3,7 @@
 *.pyc
 *~
 .vscode
+~$GT_Analysis_All_Final.xlsx
 
 # Zip Folders
 *.zip
