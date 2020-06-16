@@ -12,6 +12,7 @@ from time import time
 from matplotlib.cm import rainbow
 from matplotlib import offsetbox
 from sklearn import manifold
+from adjustText import adjust_text
 
 
 def plot_country_clustering(X, y, label, spacing, title=None):
@@ -22,11 +23,13 @@ def plot_country_clustering(X, y, label, spacing, title=None):
     x_min, x_max = np.min(X, 0), np.max(X, 0)
     X = (X - x_min) / (x_max - x_min)
     plt.figure()
+    texts = []
     for i in range(X.shape[0]):
         plt.plot(X[i, 0], X[i, 1], marker=".", c=colormap[label[i]-1])
         if i % spacing == 0:
-            plt.text(X[i, 0], X[i, 1], y[i], fontdict={'weight': 'bold', 'size': 9})
+            texts.append(plt.text(X[i, 0], X[i, 1], y[i], fontdict={'weight': 'bold', 'size': 9}))
 
+    adjust_text(texts)
     plt.xticks([]), plt.yticks([])
     if title is not None:
         plt.title(title)
