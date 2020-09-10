@@ -29,3 +29,15 @@ For further instructions and troubleshooting, please see:
 https://saucelabs.com/resources/articles/getting-started-with-webdriver-in-python-on-osx
 
 # Explanation of Files
+- `requirements.txt` contains the necessary python dependencies; install with
+`pip install -r requirements.txt`
+- `constants.py` contains the parameters for querying Google trends, including
+the string URL for each query
+- `downloader.py` contains the code to loop through each search query on Google
+Trends and automatically download the statistics used in the computation of
+CSLI-s scores
+- `GT_Analysis_All_Final.xlsx` contains the statistics downloaded from Google
+Trends using `downloader.py`, which are used in the computation of CLSI-s scores
+- `CLSI_scores_2014_to_2018.csv` contains the computed CLSI-s scores
+- `cluster_data.py` contains the code to plot countries' embeddings,
+both via an arbitrary 2D embedding and via t-SNE (typically applied to the CSLI scores)
